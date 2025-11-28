@@ -19,7 +19,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video-as-Answer: Predict and Generate Next Video Event with Joint-GRPO</title>
+    <title>POLARIS</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/icon.png">
@@ -51,6 +51,8 @@
     border-radius: 8px;
     overflow: hidden;
 }
+
+
 
 #citation pre {
     background: transparent;
@@ -869,26 +871,18 @@
             box-shadow: var(--shadow-medium);
         }
 
-        #editingPlayer .expanded-video {
-            max-width: 840px;
+        #editingPlayer .expanded-video,
+        .downstream-video-wrapper {
+            max-width: min(90vw, 840px);
+            width: 100%;
             margin: 0 auto;
         }
 
-        #editingPlayer video {
-            border-radius: 12px;
-            width: 100%;
-            height: auto;
-        }
-
-        .downstream-video-wrapper {
-            max-width: 1200px;
-            margin: 1.5rem auto 0;
-        }
-
+        #editingPlayer video,
         .downstream-video-wrapper video {
+            border-radius: 12px;
             width: 100%;
             height: auto;
-            border-radius: 12px;
         }
 
         .question-grid {
@@ -1320,7 +1314,7 @@
                 <a href="https://chatonz.github.io/" target="_blank" class="author-link">
                     <span>Wenshuo Chen<sup>1*</sup>, </span>
                 </a>
-                <a href="https://openreview.net/profile?id=~Haosen_Li2" target="_blank" class="author-link">
+                <a href="https://scholar.google.com/citations?user=pjjFN2cAAAAJ&hl=zh-CN" target="_blank" class="author-link">
                     <span>Haosen Li<sup>1*</sup>, </span>
                 </a>
                 <a href="https://dblp.org/pid/397/1364.html" target="_blank" class="author-link">
